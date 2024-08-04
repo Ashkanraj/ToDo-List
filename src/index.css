@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply leading-normal  text-tDark;
+  }
+  .btn {
+    @apply py-3
+     px-4
+     font-semibold
+     text-xl
+     tracking-wider
+     hover:brightness-75
+     focus:brightness-75
+     rounded-3xl;
+  }
+  .btn-primary {
+    @apply bg-purple text-white;
+  }
+  .btn-secondary {
+    @apply bg-white text-purple border-purple border;
+  }
+  .form-container {
+    @apply flex flex-col justify-center items-center gap-4 max-w-[900px] w-11/12 min-h-[350px] p-6 rounded-2xl shadow-2xl;
+  }
+  .input {
+    @apply w-full px-4 py-2  border border-gray-300 rounded-2xl focus:brightness-90 transition-all;
+  }
+}
